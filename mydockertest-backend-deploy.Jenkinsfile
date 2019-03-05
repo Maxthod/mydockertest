@@ -5,14 +5,16 @@ pipeline {
     stages {
          stage('Build') {
             steps {
-                echo "Already done."
+                echo "Maven build ..."
+                echo "Maven build ..."
+                echo "Maven build ..."
            }
         }
         stage('Fetch env') {
             steps {
                 echo "On fait des variables."
            }
-           
+
         }
         stage('Test') {
             steps {
