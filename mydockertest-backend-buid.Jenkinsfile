@@ -8,13 +8,6 @@ pipeline {
 
     
     stages {
-         stage('Maven') {
-            steps {
-                echo "Maven build ..."
-                sh "mvn install"
-                echo "Maven done."
-           }
-        }
         stage('Docker') {
             steps {
                 echo "Docker build ..."
