@@ -11,14 +11,14 @@ pipeline {
         stage('Docker') {
             steps {
                 echo "Docker build ..."
-                sh "docker build -t huguesmcd/mydockertest-backend ."
+                sh "sudo docker build -t huguesmcd/mydockertest-backend ."
                 echo "Docker done."
            }
         }
         stage('Deploy') {
             steps {
                 echo "Docker deploy ..."
-                sh "docker push huguesmcd/mydockertest-backend"
+                sh "sudo docker push huguesmcd/mydockertest-backend"
                 echo "Docker done."
             }
         }
