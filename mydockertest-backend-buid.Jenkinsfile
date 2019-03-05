@@ -11,7 +11,7 @@ pipeline {
         stage('Docker') {
             steps {
                 echo "Docker build ..."
-                sh "docker build -it huguesmcd/mydockertest-backend"
+                sh "docker build -t huguesmcd/mydockertest-backend ."
                 echo "Docker done."
            }
         }
